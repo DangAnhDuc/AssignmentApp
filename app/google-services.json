@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "20257900637",
+    "firebase_url": "https://pet-managing.firebaseio.com",
+    "project_id": "pet-managing",
+    "storage_bucket": "pet-managing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20257900637:android:e50700eb47e328ea",
+        "android_client_info": {
+          "package_name": "com.example.admin.pet_managing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20257900637-umeggjr7u1iti9dna7797hgdjsmtijkj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.pet_managing",
+            "certificate_hash": "c08a8ad29be9d0dc53daadd092fca3f20ca51561"
+          }
+        },
+        {
+          "client_id": "20257900637-nr7bh2t7vr6g1nnrkfk4uuvl8hamgt7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeVUJ8xl-uWAh64D2_-AgYoLBjKZv5EX8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20257900637-nr7bh2t7vr6g1nnrkfk4uuvl8hamgt7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
