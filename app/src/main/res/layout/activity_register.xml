@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Start.RegisterActivity"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/img_reg_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/reg" />
+
+    <EditText
+        android:id="@+id/edt_reg_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_reg_logo"
+        android:layout_marginTop="20dp"
+        android:hint="Name"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/text"
+        android:drawableLeft="@drawable/ic_action_name"
+        />
+
+    <EditText
+        android:id="@+id/edt_reg_email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edt_reg_name"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/text"
+        android:drawableLeft="@drawable/ic_action_email"
+        />
+    <EditText
+        android:id="@+id/edt_reg_password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edt_reg_email"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/text"
+        android:drawableLeft="@drawable/ic_action_password"
+        />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_reg_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Register"
+        android:background="@drawable/button_rectangle_red"
+        android:textSize="20sp"
+        android:textColor="@color/text"/>
+
+    <Button
+        android:id="@+id/btn_fb_reg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_reg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Register with facebook"
+        android:background="@drawable/button_rectangle_pink1"
+        android:textSize="15sp"
+        android:textColor="@color/text"/>
+    <Button
+        android:id="@+id/btn_gg_reg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_fb_reg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Register with Google"
+        android:background="@drawable/button_rectangle_pink2"
+        android:textSize="15sp"
+        android:textColor="@color/text"/>
+</RelativeLayout>
