@@ -20,7 +20,7 @@
             app:title="Pet Managing"
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleMarginEnd="64dp"
-            android:background="@drawable/background">
+            android:background="@drawable/cover">
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolBar"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
@@ -71,7 +71,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
-                            android:text="Pet Manaing"
+                            android:text="Pet Managing"
                             android:layout_marginTop="10dp"/>
                         <TextView
                             android:layout_width="wrap_content"
