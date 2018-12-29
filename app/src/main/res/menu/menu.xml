@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_healthIndex"
+        android:enabled="true"
+        android:iconTint="@android:color/white"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+        android:title="Health Index" />
+
+    <item
+        android:id="@+id/action_tracking"
+        android:enabled="true"
+        android:iconTint="@android:color/white"
+        android:icon="@drawable/ic_location_on_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Tracking" />
+</menu>
