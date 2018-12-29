@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.admin.pet_managing">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +13,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Start.LoginActivity" />
+        <activity android:name=".Start.RegisterActivity" />
+        <activity android:name=".Start.WelcomeActivity" />
+        <activity android:name=".MainFunction.HomePageActivity" />
+        <activity android:name=".Start.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".VetContact.VetListActivity" />
+        <activity android:name=".LiveChat.ChatListActivity" />
+        <activity android:name=".MainFunction.SettingListActivity" />
+        <activity android:name=".PetManage.PetListActivity" />
+        <activity android:name=".PetManage.PetManageActivity" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDeVUJ8xl-uWAh64D2_-AgYoLBjKZv5EX8" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+
+        <activity android:name=".AddPetActivity"></activity>
     </application>
 
 </manifest>
