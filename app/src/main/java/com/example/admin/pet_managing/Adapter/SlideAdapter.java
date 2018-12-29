@@ -20,32 +20,31 @@ public class SlideAdapter extends PagerAdapter {
 
     // list of images
     public int[] lst_images = {
-            R.drawable.image_1,
-            R.drawable.image_2,
-            R.drawable.image_3,
-            R.drawable.image_4
+            R.drawable.image_11,
+            R.drawable.image_21,
+            R.drawable.image_31,
+            R.drawable.image_41
     };
     // list of titles
     public String[] lst_title = {
-            "COSMONAUT",
-            "SATELITE",
-            "GALAXY",
-            "ROCKET"
+            "PET TRACKING",
+            "VET CONTACT",
+            "PET MANAGING",
+            "CHAT ROOM"
     }   ;
 
     // list of descriptions
     public String[] lst_description = {
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
-    };
+            "Real time tracking give information of current location of pet",
+            "Contact information of Vet in current location",
+            "Helping user to manage pet and observer all information about pet",
+            "Live chat room in current location of user to communicate with other user"};
     // list of background colors
     public int[]  lst_backgroundcolor = {
-            Color.rgb(255,217,106),
-            Color.rgb(243,73,73),
-            Color.rgb(255,144,144),
-            Color.rgb(255,182,185)
+            Color.rgb(192,219,238),
+            Color.rgb(8,75,104),
+            Color.rgb(239,131,33),
+            Color.rgb(75,197,208)
     };
 
     public SlideAdapter(Context context) {
