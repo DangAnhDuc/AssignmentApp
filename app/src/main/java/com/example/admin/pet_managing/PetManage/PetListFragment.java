@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.admin.pet_managing.AddPetActivity;
 import com.example.admin.pet_managing.Common.Common;
 import com.example.admin.pet_managing.Interface.ItemClickListener;
 import com.example.admin.pet_managing.Model.Pet;
@@ -25,7 +27,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
-public class PetListFragment extends Fragment {
+public class PetListFragment extends Fragment{
     public final String KEY="PETNUM";
     View myFragment;
     RecyclerView listPets;
@@ -34,6 +36,8 @@ public class PetListFragment extends Fragment {
 
     FirebaseDatabase firebaseDatabase;
     DatabaseReference pets;
+
+    FloatingActionButton fab;
 
     public static PetListFragment newInstance(){
         PetListFragment petListFragment=new PetListFragment();
@@ -52,15 +56,22 @@ public class PetListFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         myFragment=inflater.inflate(R.layout.fragment_pet_list,container,false);
-
+        fab=(FloatingActionButton) myFragment.findViewById(R.id.addPet);
         listPets=(RecyclerView) myFragment.findViewById(R.id.listPet);
         listPets.setHasFixedSize(true);
         layoutManager=new LinearLayoutManager(container.getContext());
         listPets.setLayoutManager(layoutManager);
-
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(),AddPetActivity.class);
+                startActivity(intent);
+            }
+        });
         loadPets();
         return myFragment;
     }
+
 
     private void loadPets() {
         adapter=new FirebaseRecyclerAdapter<Pet, PetViewHolder>(
@@ -77,6 +88,7 @@ public class PetListFragment extends Fragment {
                         Intent intent=new Intent(getContext(),PetManageActivity.class);
                         Common.petID=adapter.getRef(position).getKey();
                         Common.petName=model.getName();
+                        Common.petEmail=model.getEmail();
                         loadHealthIndex(Common.petName);
                         startActivity(intent);
                     }
@@ -93,7 +105,7 @@ public class PetListFragment extends Fragment {
             Common.petList.clear();
         }
 
-        pets.orderByChild("Name").equalTo(petName).addValueEventListener(new ValueEventListener() {
+        pets.orderByChild("name").equalTo(petName).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot postSnapshot:dataSnapshot.getChildren()){
@@ -109,4 +121,7 @@ public class PetListFragment extends Fragment {
         });
 
     }
+
+
+
 }
