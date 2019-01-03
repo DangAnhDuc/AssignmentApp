@@ -1,6 +1,9 @@
 package com.example.admin.pet_managing.VetContact;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.SyncStateContract;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -69,11 +72,13 @@ public class VetListFragment extends Fragment {
 
 
                 Picasso.with(getActivity()).load(model.getImage()).into(viewHolder.vetImage);
-
+                final String number= model.getPhone().toString();
                 viewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-
+                        Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+                        dialIntent.setData(Uri.parse("tel:" + number));
+                        startActivity(dialIntent);
                     }
                 });
             }
