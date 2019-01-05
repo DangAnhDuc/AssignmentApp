@@ -8,4 +8,6 @@ import java.util.List;
 public class Common {
     public static  String petID,petName;
     public static List<Pet> petList=new ArrayList<>();
+    public static String petEmail;
+    public static Double petLat,petLng;
 }

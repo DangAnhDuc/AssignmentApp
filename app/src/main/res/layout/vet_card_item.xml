@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_margin="10dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/img_vet_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vet Name"
+            android:id="@+id/txtVetName"
+            android:layout_toRightOf="@+id/img_vet_logo"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vet Address"
+            android:id="@+id/txtVetAddress"
+            android:layout_toRightOf="@+id/img_vet_logo"
+            android:layout_below="@+id/txtVetName"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vet Phone"
+            android:id="@+id/txtVetPhone"
+            android:layout_toRightOf="@+id/img_vet_logo"
+            android:layout_below="@+id/txtVetAddress"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vet Website"
+            android:id="@+id/txtVetWebsite"
+            android:layout_toRightOf="@+id/img_vet_logo"
+            android:layout_below="@+id/txtVetPhone"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
