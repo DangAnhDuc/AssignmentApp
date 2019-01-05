@@ -9,9 +9,9 @@
     tools:context=".Start.MainActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/picture14482009309298"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pet_logo"
         android:layout_centerInParent="true"/>
 
 </RelativeLayout>

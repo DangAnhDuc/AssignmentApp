@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.admin.pet_managing.PetManage.HealthIndexFragment;
 import com.example.admin.pet_managing.R;
 import com.example.admin.pet_managing.TrackingFragment;
 

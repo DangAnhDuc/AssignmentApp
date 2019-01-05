@@ -8,7 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingEnd="16dp"
     android:id="@+id/chat_list_layout"
-    tools:context=".MainFunction.ChatListActivity"
+    tools:context=".LiveChat.ChatListActivity"
     >
     <ImageView
         android:layout_width="40dp"
