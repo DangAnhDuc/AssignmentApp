@@ -10,12 +10,13 @@ public class Pet {
     private String Age;
     private String BloodType;
     private String FavouriteFood;
+    private String Email;
 
 
     public Pet() {
     }
 
-    public Pet(String name, String image, String type, String weight, String height, String gender, String age, String bloodType, String favouriteFood) {
+    public Pet(String name, String image, String type, String weight, String height, String gender, String age, String bloodType, String favouriteFood, String email) {
         Name = name;
         Image = image;
         Type = type;
@@ -25,8 +26,8 @@ public class Pet {
         Age = age;
         BloodType = bloodType;
         FavouriteFood = favouriteFood;
+        Email = email;
     }
-
 
     public String getName() {
         return Name;
@@ -88,15 +89,23 @@ public class Pet {
         return BloodType;
     }
 
-    public void setBloodType(String bloodType) {
-        BloodType = bloodType;
+    public void setBloodType(String bloodtype) {
+        BloodType = bloodtype;
     }
 
     public String getFavouriteFood() {
         return FavouriteFood;
     }
 
-    public void setFavouriteFood(String favouriteFood) {
-        FavouriteFood = favouriteFood;
+    public void setFavouriteFood(String favouritefood) {
+        FavouriteFood = favouritefood;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
     }
 }

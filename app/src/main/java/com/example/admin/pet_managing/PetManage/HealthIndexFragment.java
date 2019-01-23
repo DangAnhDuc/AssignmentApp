@@ -18,9 +18,7 @@ import com.squareup.picasso.Picasso;
 //http://www.objgen.com/json/models/y1h
 public class HealthIndexFragment extends Fragment {
     View myFragment;
-    NestedScrollView listHealthIndex;
     TextView txtName, txtAge,txtGender,txtType,txtWeight,txtHeight,txtBloodType,txtFavouriteFood;
-    String name,age,gender,type,weight,height,blood,food;
     ImageView petAva;
     public static HealthIndexFragment newInstance() {
         HealthIndexFragment healthIndexFragment=new HealthIndexFragment();
@@ -36,8 +34,7 @@ public class HealthIndexFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         myFragment=inflater.inflate(R.layout.fragment_health_index,container,false);
-        listHealthIndex= (NestedScrollView) myFragment.findViewById(R.id.health_index_nestedscroll);
-        petAva=myFragment.findViewById(R.id.pet_ava);
+        petAva=myFragment.findViewById(R.id.petAva);
         txtName=myFragment.findViewById(R.id.txtNameDetail);
         txtAge=myFragment.findViewById(R.id.txtAgeDetail);
         txtGender=myFragment.findViewById(R.id.txtGenderDetail);
@@ -45,7 +42,7 @@ public class HealthIndexFragment extends Fragment {
         txtWeight=myFragment.findViewById(R.id.txtWeightDetail);
         txtHeight=myFragment.findViewById(R.id.txtHeightDetail);
         txtBloodType=myFragment.findViewById(R.id.txtBloodTypeDetail);
-        txtFavouriteFood=myFragment.findViewById(R.id.txtFavouriteFoodeDetail);
+        txtFavouriteFood=myFragment.findViewById(R.id.txtFavouriteFoodDetail);
         loadPets();
         return myFragment;
     }
